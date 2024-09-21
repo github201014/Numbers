@@ -1,2 +1,11 @@
 # Numbers
-Some Classes Of Numbers, use Python
+## 概述
+此 Python 库提供了有用的数字类型以及与 **线性代数** 相关的类型，包括：
+
+* 分数类型
+* 复数类型
+* 矩阵类型
+* 方阵类型
+* 行列式类型
+
+这些类型与 Python 内置类型 *int*, *float* 兼容，且支持基本运算 。
