@@ -1,0 +1,3 @@
+from . import Matrix
+
+class SquareMatrix(Matrix):...
