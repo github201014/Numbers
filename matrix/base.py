@@ -1,7 +1,10 @@
 from .exception import MatrixError
 class MatrixBase(object):
-
     def __init__(self, args: list[list[int | float]]):
+        len0 = len(args[0])
+        for i in args:
+            if len(i) != len0:
+                raise MatrixError("False args")
         self.args = args
 
     def __str__(self):
@@ -18,3 +21,6 @@ class MatrixBase(object):
             string += "]\n"
             STR_I += 1
         return string
+
+    def __repr__(self):
+        return self.__str__()
